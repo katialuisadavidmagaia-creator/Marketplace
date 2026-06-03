@@ -1,0 +1,24 @@
+.auth-page {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: radial-gradient(ellipse at 50% 50%, rgba(124,58,237,0.1) 0%, transparent 70%);
+  padding: 40px 20px;
+}
+.auth-card {
+  background: #1a1a2e; border: 1px solid rgba(124,58,237,0.3);
+  border-radius: 20px; padding: 48px 40px; width: 100%; max-width: 420px;
+  text-align: center;
+}
+.auth-logo {
+  font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700;
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text; margin-bottom: 24px;
+}
+.auth-card h2 { font-size: 1.6rem; color: white; margin-bottom: 8px; }
+.auth-card p { color: #94a3b8; margin-bottom: 32px; }
+.auth-form { display: flex; flex-direction: column; gap: 16px; text-align: left; }
+.campo label { display: block; font-size: 0.85rem; color: #94a3b8; margin-bottom: 6px; font-weight: 500; }
+.btn-auth-submit { width: 100%; justify-content: center; margin-top: 8px; padding: 14px; font-size: 1rem; }
+.auth-alternar { margin-top: 24px; color: #64748b; font-size: 0.9rem; }
+.auth-alternar span { color: #a855f7; cursor: pointer; font-weight: 600; }
+.auth-alternar span:hover { text-decoration: underline; }

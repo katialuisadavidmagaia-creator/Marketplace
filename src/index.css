@@ -1,0 +1,147 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --roxo:        #7c3aed;
+  --roxo-claro:  #a855f7;
+  --rosa:        #ec4899;
+  --laranja:     #f97316;
+  --amarelo:     #fbbf24;
+  --verde:       #10b981;
+  --azul:        #3b82f6;
+  --fundo:       #0f0f1a;
+  --fundo-card:  #1a1a2e;
+  --fundo-card2: #16213e;
+  --texto:       #e2e8f0;
+  --texto-fraco: #94a3b8;
+  --borda:       rgba(124, 58, 237, 0.3);
+  --gradiente:   linear-gradient(135deg, #7c3aed, #ec4899, #f97316);
+  --gradiente2:  linear-gradient(135deg, #3b82f6, #7c3aed);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  min-height: 100vh;
+}
+
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+a { text-decoration: none; color: inherit; }
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--borda);
+  border-radius: 10px;
+  color: var(--texto);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--roxo-claro);
+  background: rgba(255,255,255,0.08);
+}
+
+input::placeholder, textarea::placeholder { color: #555; font-style: italic; }
+
+select option { background: #1a1a2e; }
+
+button { cursor: pointer; font-family: 'Inter', sans-serif; border: none; }
+
+/* ── Botões ── */
+.btn-primary {
+  padding: 12px 28px;
+  background: var(--gradiente);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  transition: opacity 0.2s, transform 0.15s;
+  letter-spacing: 0.5px;
+}
+.btn-primary:hover { opacity: 0.88; transform: translateY(-2px); }
+
+.btn-secondary {
+  padding: 10px 24px;
+  background: transparent;
+  color: var(--roxo-claro);
+  font-weight: 600;
+  border: 1px solid var(--roxo-claro);
+  border-radius: 10px;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-secondary:hover { background: var(--roxo-claro); color: white; }
+
+.btn-ghost {
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.05);
+  color: var(--texto-fraco);
+  border-radius: 8px;
+  font-size: 0.85rem;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-ghost:hover { background: rgba(255,255,255,0.1); color: var(--texto); }
+
+/* ── Cards ── */
+.card {
+  background: var(--fundo-card);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  padding: 24px;
+  transition: border-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+.card:hover {
+  border-color: var(--roxo-claro);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(124,58,237,0.15);
+}
+
+/* ── Badge ── */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.badge-roxo  { background: rgba(124,58,237,0.2);  color: var(--roxo-claro); }
+.badge-rosa  { background: rgba(236,72,153,0.2);  color: #f472b6; }
+.badge-verde { background: rgba(16,185,129,0.2);  color: #34d399; }
+.badge-azul  { background: rgba(59,130,246,0.2);  color: #60a5fa; }
+
+/* ── Container ── */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+/* ── Gradiente de texto ── */
+.texto-gradiente {
+  background: var(--gradiente);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Animações ── */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+.fade-in { animation: fadeInUp 0.5s ease both; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--fundo); }
+::-webkit-scrollbar-thumb { background: var(--roxo); border-radius: 3px; }

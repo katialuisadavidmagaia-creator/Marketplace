@@ -1,0 +1,24 @@
+.carrinho-vazio { min-height: 70vh; display: flex; align-items: center; }
+.carrinho-vazio .container { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.carrinho-vazio h2 { font-size: 1.8rem; color: white; }
+.carrinho-vazio p { color: #64748b; }
+.carrinho-page { padding: 60px 0 100px; }
+.btn-voltar { display: inline-flex; align-items: center; gap: 8px; color: #94a3b8; font-size: 0.9rem; margin-bottom: 32px; transition: color 0.2s; }
+.btn-voltar:hover { color: white; }
+.carrinho-page h1 { font-size: 2rem; color: white; margin-bottom: 32px; }
+.carrinho-layout { display: grid; grid-template-columns: 1fr 340px; gap: 32px; align-items: start; }
+.carrinho-item { display: flex; align-items: center; gap: 16px; background: #1a1a2e; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 20px; margin-bottom: 12px; }
+.item-cor { width: 4px; height: 60px; border-radius: 2px; flex-shrink: 0; }
+.item-info { flex: 1; }
+.item-info h3 { color: white; font-size: 1rem; margin-bottom: 4px; }
+.item-info p { color: #64748b; font-size: 0.85rem; margin-bottom: 8px; }
+.item-preco { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.item-preco span { font-size: 1.1rem; font-weight: 700; color: #a855f7; }
+.btn-remover { background: rgba(239,68,68,0.1); border: none; color: #ef4444; padding: 6px; border-radius: 6px; transition: background 0.2s; }
+.btn-remover:hover { background: rgba(239,68,68,0.2); }
+.carrinho-resumo { background: #1a1a2e; border: 1px solid rgba(124,58,237,0.2); border-radius: 16px; padding: 28px; position: sticky; top: 100px; }
+.carrinho-resumo h3 { color: white; font-size: 1.1rem; margin-bottom: 20px; }
+.resumo-linha { display: flex; justify-content: space-between; color: #94a3b8; font-size: 0.9rem; margin-bottom: 12px; }
+.resumo-linha.total { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 12px; color: white; font-size: 1rem; }
+.btn-checkout { width: 100%; justify-content: center; margin-top: 20px; padding: 14px; font-size: 1rem; }
+@media (max-width: 768px) { .carrinho-layout { grid-template-columns: 1fr; } }

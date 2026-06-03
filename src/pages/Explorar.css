@@ -1,0 +1,23 @@
+.explorar { padding: 60px 0 100px; }
+.explorar-header { text-align: center; margin-bottom: 48px; }
+.explorar-header h1 { font-size: 2.5rem; color: white; margin-bottom: 8px; }
+.explorar-header p { color: #94a3b8; }
+.explorar-filtros { margin-bottom: 32px; display: flex; flex-direction: column; gap: 16px; }
+.pesquisa-wrapper { position: relative; max-width: 500px; }
+.pesquisa-icon { position: absolute; left: 14px; top: 50%; transform: translateY(-50%); color: #64748b; }
+.pesquisa-input { padding-left: 44px !important; }
+.categorias-filtro { display: flex; flex-wrap: wrap; gap: 8px; }
+.cat-btn {
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  color: #94a3b8;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+.cat-btn:hover { background: rgba(124,58,237,0.1); border-color: rgba(124,58,237,0.3); color: #a855f7; }
+.cat-btn.ativo { background: rgba(124,58,237,0.2); border-color: #7c3aed; color: #a855f7; font-weight: 600; }
+.resultado-count { color: #64748b; font-size: 0.9rem; margin-bottom: 24px; }
+.poemas-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
+.sem-resultados { grid-column: 1/-1; text-align: center; padding: 60px; color: #64748b; font-size: 1.1rem; }

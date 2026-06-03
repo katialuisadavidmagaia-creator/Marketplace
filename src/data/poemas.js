@@ -1,0 +1,103 @@
+
+export const POEMAS_EXEMPLO = [
+  {
+    id: 1,
+    titulo: "O Mar que Canta",
+    autor: "Sofia Mendes",
+    avatar: "SM",
+    categoria: "Natureza",
+    preview: "As ondas trazem segredos\nque o vento nunca soube guardar...",
+    texto: "As ondas trazem segredos\nque o vento nunca soube guardar,\ncada espuma é uma história\nque o mar insiste em contar.\n\nSal e tempo se misturam\nnas pedras do meu olhar,\nnão há mapa que me guie\nquando o mar quer me levar.",
+    preco: 9.99,
+    curtidas: 142,
+    vendas: 38,
+    avaliacao: 4.8,
+    destaque: true,
+    cor: "#7c3aed"
+  },
+  {
+    id: 2,
+    titulo: "Cidade de Vidro",
+    autor: "Bruno Tavares",
+    avatar: "BT",
+    categoria: "Urbano",
+    preview: "Caminho entre arranha-céus\ncomo fantasma de néon...",
+    texto: "Caminho entre arranha-céus\ncomo fantasma de néon,\nninguém me vê, ninguém me chama\nnesta cidade de cartão.\n\nAs luzes piscam em código\nque eu nunca aprendi a ler,\nmas fico aqui, entre as sombras,\nà espera de me perder.",
+    preco: 7.50,
+    curtidas: 89,
+    vendas: 21,
+    avaliacao: 4.5,
+    destaque: true,
+    cor: "#3b82f6"
+  },
+  {
+    id: 3,
+    titulo: "Amor em Prosa",
+    autor: "Ana Cristina",
+    avatar: "AC",
+    categoria: "Romântica",
+    preview: "Te escrevo em silêncio\nquando a noite não tem fim...",
+    texto: "Te escrevo em silêncio\nquando a noite não tem fim,\ncada palavra é uma ponte\nque constrói o caminho a ti.\n\nNão preciso de metáforas\nnem de rimas a combinar,\nbasta o teu nome escrito\npara o poema começar.",
+    preco: 12.00,
+    curtidas: 203,
+    vendas: 67,
+    avaliacao: 4.9,
+    destaque: true,
+    cor: "#ec4899"
+  },
+  {
+    id: 4,
+    titulo: "Raízes e Asas",
+    autor: "Miguel Costa",
+    avatar: "MC",
+    categoria: "Reflexão",
+    preview: "Nasci com raízes fundas\nmas os pés querem voar...",
+    texto: "Nasci com raízes fundas\nmas os pés querem voar,\ncarrego a terra nos ossos\ne o céu no olhar.\n\nSou a contradição viva\nde quem fica e de quem vai,\nde quem chora e de quem ri\nde quem sobe e de quem cai.",
+    preco: 8.00,
+    curtidas: 156,
+    vendas: 44,
+    avaliacao: 4.7,
+    destaque: false,
+    cor: "#10b981"
+  },
+  {
+    id: 5,
+    titulo: "Melancolia de Inverno",
+    autor: "Laura Fonseca",
+    avatar: "LF",
+    categoria: "Melancolia",
+    preview: "A chuva bate na janela\ncomo quem pede passagem...",
+    texto: "A chuva bate na janela\ncomo quem pede passagem,\nlá fora o mundo está frio\ncá dentro guardo a imagem.\n\nDe dias que já não voltam\nde sorrisos que ficaram,\nnesta melancolia doce\nque só os poetas amaram.",
+    preco: 6.50,
+    curtidas: 98,
+    vendas: 29,
+    avaliacao: 4.6,
+    destaque: false,
+    cor: "#6366f1"
+  },
+  {
+    id: 6,
+    titulo: "Verso Livre",
+    autor: "Pedro Alves",
+    avatar: "PA",
+    categoria: "Espiritual",
+    preview: "Não me prendam em métricas\nsou palavra sem grilhão...",
+    texto: "Não me prendam em métricas\nsou palavra sem grilhão,\ncorro livre pelo papel\nsem medo da solidão.\n\nSou o verso que se dobra\nsem nunca se partir,\nsou a voz que ecoa sempre\nmuito depois de eu partir.",
+    preco: 5.00,
+    curtidas: 74,
+    vendas: 18,
+    avaliacao: 4.4,
+    destaque: false,
+    cor: "#f97316"
+  }
+]
+
+export const CATEGORIAS = [
+  { nome: 'Todos',  cor: '#7c3aed' },
+  { nome: 'Romântica',cor: '#ec4899' },
+  { nome: 'Natureza', cor: '#10b981' },
+  { nome: 'Urbano',  cor: '#3b82f6' },
+  { nome: 'Melancolia', cor: '#6366f1' },
+  { nome: 'Reflexão', cor: '#f97316' },
+  { nome: 'Espiritual', cor: '#fbbf24' },
+]

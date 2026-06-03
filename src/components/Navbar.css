@@ -1,0 +1,96 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(15,15,26,0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(124,58,237,0.2);
+  padding: 16px 0;
+}
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+.logo-icon { font-size: 1.5rem; }
+.logo-texto {
+  background: linear-gradient(135deg, #7c3aed, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s, background 0.2s;
+}
+.nav-link:hover { color: white; background: rgba(255,255,255,0.05); }
+.navbar-acoes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.btn-carrinho {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  color: #94a3b8;
+  transition: color 0.2s, background 0.2s;
+}
+.btn-carrinho:hover { color: white; background: rgba(255,255,255,0.05); }
+.carrinho-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: #ec4899;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-usuario {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.avatar-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  background: rgba(124,58,237,0.15);
+  border: 1px solid rgba(124,58,237,0.3);
+  border-radius: 8px;
+  color: #a855f7;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.avatar-btn:hover { background: rgba(124,58,237,0.25); }
